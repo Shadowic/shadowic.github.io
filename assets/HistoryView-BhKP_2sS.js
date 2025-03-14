@@ -1,1 +1,0 @@
-import{_ as e,c as o,a as t,o as r}from"./index-aqXTLG_A.js";const a={},n={class:"history"};function c(i,s){return r(),o("div",n,s[0]||(s[0]=[t("h1",null,"This is an history page",-1)]))}const l=e(a,[["render",c]]);export{l as default};
