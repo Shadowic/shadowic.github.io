@@ -1,9 +1,11 @@
 <script setup lang="ts">
-import TheWelcome from '../components/TheWelcome.vue'
+import TheHero from '../components/TheHero.vue'
+import TheAlbum from '../components/TheAlbum.vue'
 </script>
 
 <template>
   <main>
-    <TheWelcome />
+    <TheHero />
+    <TheAlbum />
   </main>
 </template>
