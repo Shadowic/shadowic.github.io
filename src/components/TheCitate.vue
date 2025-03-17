@@ -1,5 +1,5 @@
 <template>
-  <div class="container mt-24">
+  <div class="custom-container mt-24">
     <div class="w-[150px] h-0.5 mx-auto bg-[#2a2725]" />
     <blockquote>
       <p class="text-xl text-center">

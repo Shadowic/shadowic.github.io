@@ -1,6 +1,6 @@
 <template>
-  <div class="bg-[#fdf8ef] py-20">
-    <div class="container flex flex-col">
+  <div class="bg-[#fdf8ef] py-20 mt-18">
+    <div class="custom-container flex flex-col">
       <div class="grid grid-cols-[repeat(auto-fit,_minmax(150px,_1fr))] gap-5 [&>*:last-child]:items-end">
         <ul>
           <p class="font-bold">Duis id</p>
@@ -65,8 +65,8 @@
           </div>
         </div>
       </div>
-      <div>
-        <ul class="flex gap-10">
+      <div class="mx-auto mt-12">
+        <ul class="flex flex-wrap gap-10">
           <li>
             <a href="/">Privacy Policy</a>
           </li>
@@ -87,4 +87,3 @@
     </div>
   </div>
 </template>
-H

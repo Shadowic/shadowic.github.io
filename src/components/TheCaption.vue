@@ -1,5 +1,5 @@
 <template>
-  <div class="container mt-24">
+  <div class="custom-container mt-24">
     <h2 class="text-center">
       Class aptent taciti sociosqu
     </h2>

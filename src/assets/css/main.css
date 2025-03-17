@@ -1,10 +1,10 @@
 @import './fonts.css';
 @import './base.css';
+@import "./tailwind.css";
 @import "tailwindcss";
 
 a {
   text-decoration: none;
-  /*transition: 0.4s;*/
 }
 
 /*@media (hover: hover) {*/
@@ -12,9 +12,3 @@ a {
 /*    background-color: hsla(160, 100%, 37%, 0.2);*/
 /*  }*/
 /*}*/
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding-inline: 20px;
-}
