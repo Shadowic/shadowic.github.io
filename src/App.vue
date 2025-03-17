@@ -8,7 +8,7 @@ import TheFooter from './components/TheFooter.vue'
   <header class="fixed top-0 left-0 right-0 z-10 flex justify-between items-center">
 
     <div class="flex">
-      <img alt="logo" class="logo" src="@/assets/IMG_9542.jpg" width="125" height="125" />
+      <img alt="logo" class="logo" src="@/assets/images/IMG_9542.jpg" width="125" height="125" />
       <HelloWorld msg="Hello world" />
     </div>
 

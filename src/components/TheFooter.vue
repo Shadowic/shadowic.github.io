@@ -38,7 +38,7 @@
         </form>
         <div class="flex flex-col">
           <div class="w-10 h-10 rounded-xl overflow-hidden">
-            <img alt="image" src="@/assets/IMG_9408.jpg" width="125" height="125" draggable="false" class="w-full h-full object-cover" />
+            <img alt="image" src="@/assets/images/IMG_9408.jpg" width="125" height="125" draggable="false" class="w-full h-full object-cover" />
           </div>
           <div>
             <p>Follow us</p>
