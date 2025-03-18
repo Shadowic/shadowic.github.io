@@ -5,6 +5,7 @@ import TheCitate from '../components/TheCitate.vue'
 import TheGallery from '../components/TheGallery.vue'
 import TheAbout from '../components/TheAbout.vue'
 import TheCaption from '../components/TheCaption.vue'
+import BorderBlock from '../components/BorderBlock.vue'
 </script>
 
 <template>
@@ -13,6 +14,7 @@ import TheCaption from '../components/TheCaption.vue'
     <TheAlbum />
     <TheCitate />
     <TheGallery />
+    <BorderBlock class="mt-24"/>
     <TheAbout />
     <TheCaption />
   </main>

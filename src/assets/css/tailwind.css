@@ -13,8 +13,35 @@
 
 @layer components {
   .custom-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding-inline: 20px;
+    @apply max-w-[1200px] mx-auto px-5;
+  }
+  .custom-gallery {
+    @apply grid grid-cols-[repeat(2,_1fr)] md:grid-cols-[repeat(34,_1fr)] auto-rows-[50px] md:auto-rows-[150px] gap-1 md:gap-2 grid-flow-row-dense;
+  }
+  .custom-gallery-item {
+    &:nth-child(1) {
+      @apply row-span-2 md:col-span-15;
+    }
+    &:nth-child(2) {
+       @apply row-span-3 md:col-span-5 md:row-span-2;
+    }
+    &:nth-child(3) {
+       @apply row-span-3 md:col-span-9 md:row-span-4;
+    }
+    &:nth-child(4) {
+       @apply row-span-3 md:col-span-5 md:row-span-1;
+    }
+    &:nth-child(5) {
+       @apply row-span-2 md:col-span-12;
+    }
+    &:nth-child(6) {
+       @apply row-span-2 md:col-span-8;
+    }
+    &:nth-child(7) {
+       @apply row-span-3 md:col-span-5 md:row-span-2;
+    }
+    &:nth-child(8) {
+       @apply row-span-2 md:col-span-5 md:row-span-1;
+    }
   }
 }

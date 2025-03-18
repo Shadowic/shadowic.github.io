@@ -5,24 +5,26 @@ import TheFooter from './components/TheFooter.vue'
 </script>
 
 <template>
-  <header class="fixed top-0 left-0 right-0 z-10 flex justify-between items-center">
+  <header class="fixed top-0 right-0 left-0 z-10 backdrop-blur-lg">
+    <div class="custom-container flex justify-between items-center">
 
-    <div class="flex">
-      <img alt="logo" class="logo" src="@/assets/images/IMG_9542.jpg" width="125" height="125" />
-      <HelloWorld msg="Hello world" />
+      <div class="flex">
+        <img alt="logo" class="logo" src="@/assets/images/IMG_9542.jpg" width="125" height="125" />
+        <HelloWorld msg="Hello world" />
+      </div>
+
+      <nav>
+        <RouterLink to="/">Home</RouterLink>
+        <RouterLink to="/history">History</RouterLink>
+        <RouterLink to="/about">About</RouterLink>
+        <RouterLink to="/contact">Contact</RouterLink>
+      </nav>
+
+      <div>
+        2025
+      </div>
+
     </div>
-
-    <nav>
-      <RouterLink to="/">Home</RouterLink>
-      <RouterLink to="/history">History</RouterLink>
-      <RouterLink to="/about">About</RouterLink>
-      <RouterLink to="/contact">Contact</RouterLink>
-    </nav>
-
-    <div>
-      2025
-    </div>
-
   </header>
 
   <transition name="fade" mode="out-in">

@@ -1,24 +1,19 @@
 <template>
-  <div class="mt-24">
-    <div class="custom-container">
-      <div class="w-[150px] h-0.5 mx-auto bg-[#2a2725]" />
-    </div>
-    <div class="h-[75vh] relative">
-      <img alt="background image" src="@/assets/images/IMG_9542.jpg" width="125" height="125" draggable="false" class="w-full h-[62.5%] object-cover" />
-      <div class="flex flex-col md:flex-row justify-center items-center absolute inset-0 z-10">
-        <div class="w-full aspect-[4/3] md:w-[500px] md:h-[500px] rounded-4xl overflow-hidden flex-none">
-          <img alt="background image" src="@/assets/images/IMG_9542.jpg" width="125" height="125" draggable="false" class="w-full h-full object-cover" />
-        </div>
-        <div class="flex flex-col justify-center max-w-[500px] -ml-12 bg-[#fdf8ef;] p-10 rounded-2xl">
-          <p>aptent taciti sociosqu</p>
-          <h3 class="text-3xl uppercase">
-            Class aptent taciti sociosqu
-          </h3>
-          <p class="text-lg">
-            Maecenas id rhoncus velit. Nulla viverra urna eget ipsum cursus, sed interdum nisl facilisis. Etiam porttitor orci leo, ut commodo justo efficitur sed. Aliquam erat volutpat. Aenean mi sapien, luctus varius viverra sed, mollis ac magna.
-          </p>
-        </div>
+  <section>
+    <img alt="background image" src="@/assets/images/IMG_9542.jpg" width="125" height="125" draggable="false" class="hidden md:block w-full h-[50vh] object-cover" />
+    <div class="flex flex-col md:flex-row justify-center items-center md:-mt-[250px]">
+      <div class="w-full aspect-[4/3] md:w-[500px] md:h-[500px] md:rounded-4xl overflow-hidden flex-none">
+        <img alt="background image" src="@/assets/images/IMG_9408.jpg" width="125" height="125" draggable="false" class="w-full h-full object-cover" />
+      </div>
+      <div class="flex flex-col justify-center max-w-[500px] md:-ml-12 bg-[#fdf8ef;] p-10 md:rounded-2xl">
+        <p class="text-base md:text-lg">aptent taciti sociosqu</p>
+        <h3 class="text-lg md:text-3xl uppercase">
+          Class aptent taciti sociosqu
+        </h3>
+        <p class="text-base md:text-lg">
+          Maecenas id rhoncus velit. Nulla viverra urna eget ipsum cursus, sed interdum nisl facilisis. Etiam porttitor orci leo, ut commodo justo efficitur sed. Aliquam erat volutpat. Aenean mi sapien, luctus varius viverra sed, mollis ac magna.
+        </p>
       </div>
     </div>
-  </div>
+  </section>
 </template>

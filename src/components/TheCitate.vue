@@ -1,12 +1,16 @@
+<script setup lang="ts">
+import BorderBlock from '../components/BorderBlock.vue'
+</script>
+
 <template>
-  <div class="custom-container mt-24">
-    <div class="w-[150px] h-0.5 mx-auto bg-[#2a2725]" />
-    <blockquote>
-      <p class="text-xl text-center">
+  <section class="custom-container">
+    <BorderBlock />
+    <blockquote class="mt-12">
+      <p class="text-lg md:text-xl text-center">
         "Duis id augue a ante dignissim accumsan vitae vel nisi. Orci varius natoque penatibus et magnis dis parturient".
       </p>
     </blockquote>
-    <p class="text-2xl text-center">—Maecenas <cite>est nisl</cite></p>
-    <div class="w-[150px] h-0.5 mx-auto bg-[#2a2725]" />
-  </div>
+    <p class="text-xl md:text-2xl text-center mt-2">—Maecenas <cite>est nisl</cite></p>
+    <BorderBlock class="mt-12" />
+  </section>
 </template>
