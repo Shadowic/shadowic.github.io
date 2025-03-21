@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, useTemplateRef } from 'vue'
+import { ref } from 'vue'
 import TheLogo from './icons/TheLogo.vue'
 
 const footerLinks = ref([
@@ -58,20 +58,16 @@ const footerBottomLinks = ref([
   { text: 'Legal', link: '/', external: true },
   { text: 'Site Map', link: '/', external: true }
 ])
-
-const linksRefs = useTemplateRef('footerLinks')
-const socilasRefs = useTemplateRef('footerSocials')
-const privaciesRefs = useTemplateRef('footerBottomLinks')
 </script>
 
 <template>
   <div class="bg-[#fdf8ef] py-12 md:py-20 mt-18">
     <div class="custom-container flex flex-col">
       <div class="grid grid-cols-[repeat(auto-fit,_minmax(100px,_1fr))] gap-5 md:[&>*:last-child]:items-end">
-        <div v-for="items in footerLinks" :key="items.id" ref="linksRefs">
+        <div v-for="(items, id) in footerLinks" :key="id">
           <p class="text-base md:text-lg font-bold">{{ items.title }}</p>
           <ul>
-            <li v-for="item in items.links" :key="item.id" class="text-sm md:text-base mt-2 hover:text-[#706D54]">
+            <li v-for="(item, id) in items.links" :key="id" class="text-sm md:text-base mt-2 hover:text-[#706D54]">
               <a
                 :href="item.link"
                 :target="item.external ? '_blank' : undefined"
@@ -105,7 +101,7 @@ const privaciesRefs = useTemplateRef('footerBottomLinks')
           <div class="mt-7">
             <p class="text-base">Follow us</p>
             <ul class="flex gap-7 mt-4">
-              <li v-for="item in footerSocials" :key="item.id" ref="socilasRefs" class="flex-none w-5 h-5">
+              <li v-for="(item, id) in footerSocials" :key="id" class="flex-none w-5 h-5">
                 <a
                   :href="item.link"
                   :target="item.external ? '_blank' : undefined"
@@ -120,7 +116,7 @@ const privaciesRefs = useTemplateRef('footerBottomLinks')
       </div>
       <div class="mx-auto mt-12">
         <ul class="flex flex-wrap justify-center gap-4 md:gap-10">
-          <li v-for="item in footerBottomLinks" :key="item.id" ref="privaciesRefs" class="text-sm hover:text-[#706D54]">
+          <li v-for="(item, id) in footerBottomLinks" :key="id" class="text-sm hover:text-[#706D54]">
             <a
               :href="item.link"
               :target="item.external ? '_blank' : undefined"
