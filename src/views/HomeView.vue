@@ -14,7 +14,7 @@ import BorderBlock from '../components/BorderBlock.vue'
     <TheAlbum />
     <TheCitate />
     <TheGallery />
-    <BorderBlock class="mt-24"/>
+    <BorderBlock class="mt-12 md:mt-24"/>
     <TheAbout />
     <TheCaption />
   </main>

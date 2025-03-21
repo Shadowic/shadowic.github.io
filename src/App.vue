@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
+import TheLogo from './components/icons/TheLogo.vue'
 import HelloWorld from './components/HelloWorld.vue'
 import TheFooter from './components/TheFooter.vue'
 </script>
@@ -9,7 +10,9 @@ import TheFooter from './components/TheFooter.vue'
     <div class="custom-container flex justify-between items-center">
 
       <div class="flex">
-        <img alt="logo" class="logo" src="@/assets/images/IMG_9542.jpg" width="125" height="125" />
+        <div class="w-10 h-10 overflow-hidden border">
+          <TheLogo class="w-full h-auto" />
+        </div>
         <HelloWorld msg="Hello world" />
       </div>
 
