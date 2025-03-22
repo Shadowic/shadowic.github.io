@@ -4,18 +4,18 @@ import TheAlbum from '../components/TheAlbum.vue'
 import TheCitate from '../components/TheCitate.vue'
 import TheGallery from '../components/TheGallery.vue'
 import TheAbout from '../components/TheAbout.vue'
-import TheCaption from '../components/TheCaption.vue'
+import TheContacts from '../components/TheContacts.vue'
 import BorderBlock from '../components/BorderBlock.vue'
 </script>
 
 <template>
   <main>
     <TheHero />
-    <TheAlbum />
+    <TheAlbum id="history" />
     <TheCitate />
-    <TheGallery />
+    <TheGallery id="gallery" />
     <BorderBlock class="mt-12 md:mt-24"/>
-    <TheAbout />
-    <TheCaption />
+    <TheAbout id="about" />
+    <TheContacts id="contacts" />
   </main>
 </template>

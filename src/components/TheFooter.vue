@@ -61,11 +61,11 @@ const footerBottomLinks = ref([
 </script>
 
 <template>
-  <div class="bg-[#fdf8ef] py-12 md:py-20 mt-18">
+  <footer class="bg-[#fdf8ef] py-12 md:pt-20 pb-10 mt-18">
     <div class="custom-container flex flex-col">
       <div class="grid grid-cols-[repeat(auto-fit,_minmax(100px,_1fr))] gap-5 md:[&>*:last-child]:items-end">
         <div v-for="(items, id) in footerLinks" :key="id">
-          <p class="text-base md:text-lg font-bold">{{ items.title }}</p>
+          <p class="text-base md:text-lg text-[#706D54] font-bold">{{ items.title }}</p>
           <ul>
             <li v-for="(item, id) in items.links" :key="id" class="text-sm md:text-base mt-2 hover:text-[#706D54]">
               <a
@@ -94,11 +94,11 @@ const footerBottomLinks = ref([
           </div>
           <button type="submit" class="text-white bg-[#706D54] hover:bg-[#A08963] focus:ring-4 focus:outline-none focus:ring-[#706D54] font-medium rounded-lg text-sm w-full px-4 py-2 text-center transition-colors cursor-pointer">Submit</button>
         </form>
-        <div class="flex flex-col mt-6">
-          <div class="w-20 overflow-hidden">
+        <div class="flex max-sm:justify-between max-sm:col-span-full sm:flex-col mt-6">
+          <div class="w-20 shrink-0">
             <TheLogo class="w-full h-auto" />
           </div>
-          <div class="mt-7">
+          <div class="max-sm:text-end sm:mt-7">
             <p class="text-base">Follow us</p>
             <ul class="flex gap-7 mt-4">
               <li v-for="(item, id) in footerSocials" :key="id" class="flex-none w-5 h-5">
@@ -127,5 +127,5 @@ const footerBottomLinks = ref([
         </ul>
       </div>
     </div>
-  </div>
+  </footer>
 </template>

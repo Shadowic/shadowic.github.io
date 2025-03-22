@@ -1,42 +1,17 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
-import TheLogo from './components/icons/TheLogo.vue'
-import HelloWorld from './components/HelloWorld.vue'
+import { RouterView } from 'vue-router'
+import TheHeader from './components/TheHeader.vue'
 import TheFooter from './components/TheFooter.vue'
 </script>
 
 <template>
-  <header class="fixed top-0 right-0 left-0 z-10 backdrop-blur-lg">
-    <div class="custom-container flex justify-between items-center">
-
-      <div class="flex">
-        <div class="w-10 h-10 overflow-hidden border">
-          <TheLogo class="w-full h-auto" />
-        </div>
-        <HelloWorld msg="Hello world" />
-      </div>
-
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/history">History</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-        <RouterLink to="/contact">Contact</RouterLink>
-      </nav>
-
-      <div>
-        2025
-      </div>
-
-    </div>
-  </header>
+  <TheHeader />
 
   <transition name="fade" mode="out-in">
     <RouterView />
   </transition>
 
-  <footer>
-    <TheFooter />
-  </footer>
+  <TheFooter />
 </template>
 
 <style>
@@ -47,25 +22,5 @@ import TheFooter from './components/TheFooter.vue'
 .fade-enter-from,
 .fade-leave-to {
   opacity: 0;
-}
-</style>
-
-<style scoped>
-nav a.router-link-exact-active {
-  color: var(--color-text);
-}
-
-nav a.router-link-exact-active:hover {
-  background-color: transparent;
-}
-
-nav a {
-  display: inline-block;
-  padding: 0 1rem;
-  border-left: 1px solid var(--color-border);
-}
-
-nav a:first-of-type {
-  border: 0;
 }
 </style>

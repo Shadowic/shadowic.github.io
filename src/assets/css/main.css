@@ -3,6 +3,10 @@
 @import "./tailwind.css";
 @import "tailwindcss";
 
+html {
+  scroll-behavior: smooth !important;
+}
+
 a {
   text-decoration: none;
 }
