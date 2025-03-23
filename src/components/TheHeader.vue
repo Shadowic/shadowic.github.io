@@ -39,8 +39,8 @@ onMounted(() => {
       <!--        <RouterLink to="/about">About</RouterLink>-->
       <!--        <RouterLink to="/contact">Contact</RouterLink>-->
       <!--      </nav>-->
-      <div class="max-sm:fixed top-0 left-0 w-full h-auto max-sm:max-h-[0] group-[.mobile-menu-opened]:max-h-[999px] transition-all overflow-hidden">
-        <nav class="flex justify-center items-center max-sm:h-[100vh] max-sm:bg-[#fafafa;]">
+      <div class="max-sm:fixed top-0 left-0 w-full h-auto max-sm:max-h-[0] group-[.mobile-menu-opened]:max-h-[9999px] transition-all overflow-hidden">
+        <nav class="flex justify-center items-center max-sm:h-[100vh] max-sm:h-[100svh] max-sm:bg-[#fafafa;]">
           <ul class="flex max-sm:flex-col gap-10">
             <li v-for="(item, id) in headerLinks" :key="id" class="transition-colors text-base text-[#706D54] hover:text-[#A08963]">
               <a :href="item.link">{{ item.text }}</a>

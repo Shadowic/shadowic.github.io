@@ -77,40 +77,42 @@ const footerBottomLinks = ref([
             </li>
           </ul>
         </div>
-        <form class="max-sm:col-span-full max-sm:mt-6 max-sm:w-full mx-auto">
-          <div class="mb-5">
-            <label for="name" class="block mb-2 text-sm font-medium text-gray-900">Your name</label>
-            <input type="text" id="name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#706D54] focus:border-[#706D54] block w-full p-2.5 outline-[#706D54]" required />
-          </div>
-          <div class="mb-5">
-            <label for="email" class="block mb-2 text-sm font-medium text-gray-900">Your email</label>
-            <input type="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#706D54] focus:border-[#706D54] block w-full p-2.5 outline-[#706D54]" placeholder="name@flowbite.com" required />
-          </div>
-          <div class="flex items-start mb-5">
-            <div class="flex items-center h-5">
-              <input id="remember" type="checkbox" value="" class="w-4 h-4 border border-gray-300 rounded-sm bg-gray-50 focus:ring-3 focus:ring-[#706D54]" required />
+        <div class="contents sm:max-md:col-span-full sm:max-md:flex sm:max-md:justify-between sm:max-md:items-end">
+          <form class="max-sm:col-span-full max-sm:mt-6 max-sm:w-full">
+            <div class="mb-5">
+              <label for="name" class="block mb-2 text-sm font-medium text-gray-900">Your name</label>
+              <input type="text" id="name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#706D54] focus:border-[#706D54] block w-full p-2.5 outline-[#706D54]" required />
             </div>
-            <label for="remember" class="ms-2 text-sm font-medium text-gray-900">Remember me</label>
-          </div>
-          <button type="submit" class="text-white bg-[#706D54] hover:bg-[#A08963] focus:ring-4 focus:outline-none focus:ring-[#706D54] font-medium rounded-lg text-sm w-full px-4 py-2 text-center transition-colors cursor-pointer">Submit</button>
-        </form>
-        <div class="flex max-sm:justify-between max-sm:col-span-full sm:flex-col mt-6">
-          <div class="w-20 shrink-0">
-            <TheLogo class="w-full h-auto" />
-          </div>
-          <div class="max-sm:text-end sm:mt-7">
-            <p class="text-base">Follow us</p>
-            <ul class="flex gap-7 mt-4">
-              <li v-for="(item, id) in footerSocials" :key="id" class="flex-none w-5 h-5">
-                <a
-                  :href="item.link"
-                  :target="item.external ? '_blank' : undefined"
-                  class="[&>svg]:fill-[#706D54] hover:[&>svg]:fill-[#A08963]"
-                  v-html="item.icon"
-                >
-                </a>
-              </li>
-            </ul>
+            <div class="mb-5">
+              <label for="email" class="block mb-2 text-sm font-medium text-gray-900">Your email</label>
+              <input type="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#706D54] focus:border-[#706D54] block w-full p-2.5 outline-[#706D54]" placeholder="name@flowbite.com" required />
+            </div>
+            <div class="flex items-start mb-5">
+              <div class="flex items-center h-5">
+                <input id="remember" type="checkbox" value="" class="w-4 h-4 border border-gray-300 rounded-sm bg-gray-50 focus:ring-3 focus:ring-[#706D54]" required />
+              </div>
+              <label for="remember" class="ms-2 text-sm font-medium text-gray-900">Remember me</label>
+            </div>
+            <button type="submit" class="text-white bg-[#706D54] hover:bg-[#A08963] focus:ring-4 focus:outline-none focus:ring-[#706D54] font-medium rounded-lg text-sm w-full px-4 py-2 text-center transition-colors cursor-pointer">Submit</button>
+          </form>
+          <div class="flex max-sm:justify-between max-sm:col-span-full sm:flex-col mt-6">
+            <div class="w-20 shrink-0">
+              <TheLogo class="w-full h-auto" />
+            </div>
+            <div class="max-sm:text-end sm:mt-7">
+              <p class="text-base">Follow us</p>
+              <ul class="flex flex-wrap gap-7 mt-4">
+                <li v-for="(item, id) in footerSocials" :key="id" class="flex-none w-5 h-5">
+                  <a
+                    :href="item.link"
+                    :target="item.external ? '_blank' : undefined"
+                    class="[&>svg]:fill-[#706D54] hover:[&>svg]:fill-[#A08963]"
+                    v-html="item.icon"
+                  >
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
