@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="scroll-mt-16 md:scroll-mt-20">
     <img alt="background image" src="@/assets/images/IMG_9542.jpg" width="125" height="125" draggable="false" class="hidden lg:block w-full h-[50vh] object-cover" />
     <div class="flex flex-col md:flex-row justify-center items-center lg:-mt-[250px]">
       <div class="w-full aspect-[4/3] md:w-[500px] md:h-[500px] md:rounded-4xl overflow-hidden flex-none">

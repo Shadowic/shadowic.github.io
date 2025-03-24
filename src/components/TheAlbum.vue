@@ -3,7 +3,7 @@ import AlbumItem from './AlbumItem.vue'
 </script>
 
 <template>
-  <section class="max-md:px-0 custom-container">
+  <section class="max-md:px-0 custom-container scroll-mt-16 md:scroll-mt-20">
     <div class="flex flex-col gap-y-8 md:gap-y-24">
       <AlbumItem v-for="(item, index) in 3" :key="index">
         <template #image>

@@ -1,5 +1,5 @@
 <template>
-  <section class="custom-container grid grid-cols-1 md:grid-cols-2 gap-10">
+  <section class="custom-container grid grid-cols-1 md:grid-cols-2 gap-10 scroll-mt-16 md:scroll-mt-20">
     <div>
       <h2 class="text-lg md:text-3xl text-center">
         Class aptent taciti sociosqu

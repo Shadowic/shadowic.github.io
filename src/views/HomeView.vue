@@ -10,7 +10,7 @@ import BorderBlock from '../components/BorderBlock.vue'
 
 <template>
   <main>
-    <TheHero />
+    <TheHero id="hero" />
     <TheAlbum id="history" />
     <TheCitate />
     <TheGallery id="gallery" />
