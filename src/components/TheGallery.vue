@@ -17,8 +17,8 @@ const enableScroll = () => {
   document.body.style.overflow = ''
 }
 
-const setItemRef = (el: HTMLElement | null, index: number) => {
-  galleryItems.value[index] = el
+const setItemRef = (el: unknown, index: number) => {
+  galleryItems.value[index] = el as HTMLElement | null
 }
 
 const handleClick = (index: number) => {
